@@ -1,0 +1,111 @@
+
+ui-atlas.png
+size: 2048,512
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+buttonDown
+  rotate: false
+  xy: 2, 2
+  size: 192, 64
+  orig: 192, 64
+  offset: 0, 0
+  index: -1
+buttonUp
+  rotate: false
+  xy: 1220, 396
+  size: 192, 64
+  orig: 192, 64
+  offset: 0, 0
+  index: -1
+dig_down_down
+  rotate: false
+  xy: 2, 68
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+dig_down_up
+  rotate: false
+  xy: 356, 294
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+dig_up_down
+  rotate: false
+  xy: 558, 294
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+dig_up_up
+  rotate: false
+  xy: 760, 294
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+help1
+  rotate: false
+  xy: 2, 270
+  size: 352, 224
+  orig: 352, 224
+  offset: 0, 0
+  index: -1
+menubackground
+  rotate: false
+  xy: 962, 350
+  size: 256, 144
+  orig: 256, 144
+  offset: 0, 0
+  index: -1
+shovel
+  rotate: false
+  xy: 1542, 462
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snake_head
+  rotate: false
+  xy: 1220, 462
+  size: 320, 32
+  orig: 320, 32
+  offset: 0, 0
+  index: -1
+title
+  rotate: false
+  xy: 962, 300
+  size: 144, 48
+  orig: 144, 48
+  offset: 0, 0
+  index: -1
+turn_left_down
+  rotate: false
+  xy: 204, 68
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+turn_left_up
+  rotate: false
+  xy: 406, 92
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+turn_right_down
+  rotate: false
+  xy: 608, 92
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+turn_right_up
+  rotate: false
+  xy: 810, 92
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1

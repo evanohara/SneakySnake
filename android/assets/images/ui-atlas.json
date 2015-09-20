@@ -1,0 +1,34 @@
+{
+    com.badlogic.gdx.graphics.g2d.BitmapFont: {
+        default-font: { file: default.fnt },
+        button-font: { file: snake-font-16.fnt },
+        label-font: { file: snake-font-32-bold.fnt }
+    },
+    com.badlogic.gdx.graphics.Color: {
+        green: { a: 1, b: 0, g: 1, r: 0 },
+        white: { a: 1, b: 1, g: 1, r: 1 },
+        red: { a: 1, b: 0, g: 0, r: 1 },
+        black: { a: 1, b: 0, g: 0, r: 0 }
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle: {
+        left: { down: turn_left_down, up: turn_left_up },
+        right: { down: turn_right_down, up: turn_right_up },
+        digUp: { down: dig_up_down, up: dig_up_up },
+        digDown: { down: dig_down_down, up: dig_down_up }
+    },
+        com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: {
+        default: {font: button-font, downFontColor: red, fontColor: white, down: buttonDown, up: buttonUp}
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
+        default: {font: label-font, fontColor: white}
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.Image: {
+        simpleFrame: {drawable: buttonUp},
+        title: {drawable: title},
+        menuBackground: {drawable: menubackground},
+        shovelIcon: {drawable: shovel}
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle: {
+        default: {font: default-font, fontColor: red, selection: buttonUp, focusedBackground: buttonDown, cursor: snake_head}
+    }
+}

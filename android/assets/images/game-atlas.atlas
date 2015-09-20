@@ -1,0 +1,244 @@
+
+game-atlas.png
+size: 1024,256
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+background
+  rotate: false
+  xy: 2, 52
+  size: 176, 176
+  orig: 176, 176
+  offset: 0, 0
+  index: -1
+backgroundlevel1
+  rotate: false
+  xy: 180, 52
+  size: 176, 176
+  orig: 176, 176
+  offset: 0, 0
+  index: -1
+backgroundlevel2
+  rotate: false
+  xy: 358, 52
+  size: 176, 176
+  orig: 176, 176
+  offset: 0, 0
+  index: -1
+fruit1
+  rotate: false
+  xy: 392, 18
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+fruit2
+  rotate: false
+  xy: 536, 67
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+shovel
+  rotate: false
+  xy: 658, 110
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snakeBodyStraightHor
+  rotate: false
+  xy: 780, 153
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snakeBodyStraightVert
+  rotate: false
+  xy: 902, 196
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snakeBodyTurning1
+  rotate: false
+  xy: 426, 18
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snakeBodyTurning2
+  rotate: false
+  xy: 570, 67
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snakeBodyTurning3
+  rotate: false
+  xy: 692, 110
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snakeBodyTurning4
+  rotate: false
+  xy: 814, 153
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snakeHeadStraightDown
+  rotate: false
+  xy: 936, 196
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snakeHeadStraightLeft
+  rotate: false
+  xy: 460, 18
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snakeHeadStraightRight
+  rotate: false
+  xy: 604, 67
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snakeHeadStraightUp
+  rotate: false
+  xy: 726, 110
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snakeHeadTurning1
+  rotate: false
+  xy: 848, 153
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snakeHeadTurning2
+  rotate: false
+  xy: 970, 196
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snakeHeadTurning3
+  rotate: false
+  xy: 494, 18
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snakeHeadTurning4
+  rotate: false
+  xy: 638, 67
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snakeHeadTurning5
+  rotate: false
+  xy: 672, 76
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snakeHeadTurning6
+  rotate: false
+  xy: 706, 76
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snakeHeadTurning7
+  rotate: false
+  xy: 760, 110
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snakeHeadTurning8
+  rotate: false
+  xy: 740, 76
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+snake_tail
+  rotate: false
+  xy: 794, 119
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+title
+  rotate: false
+  xy: 2, 2
+  size: 144, 48
+  orig: 144, 48
+  offset: 0, 0
+  index: -1
+tweek1
+  rotate: false
+  xy: 536, 187
+  size: 120, 41
+  orig: 120, 41
+  offset: 0, 0
+  index: -1
+tweek2
+  rotate: false
+  xy: 148, 9
+  size: 120, 41
+  orig: 120, 41
+  offset: 0, 0
+  index: -1
+tweek3
+  rotate: false
+  xy: 536, 144
+  size: 120, 41
+  orig: 120, 41
+  offset: 0, 0
+  index: -1
+tweek4
+  rotate: false
+  xy: 658, 187
+  size: 120, 41
+  orig: 120, 41
+  offset: 0, 0
+  index: -1
+tweek5
+  rotate: false
+  xy: 270, 9
+  size: 120, 41
+  orig: 120, 41
+  offset: 0, 0
+  index: -1
+tweek6
+  rotate: false
+  xy: 536, 101
+  size: 120, 41
+  orig: 120, 41
+  offset: 0, 0
+  index: -1
+tweek7
+  rotate: false
+  xy: 658, 144
+  size: 120, 41
+  orig: 120, 41
+  offset: 0, 0
+  index: -1
+tweek8
+  rotate: false
+  xy: 780, 187
+  size: 120, 41
+  orig: 120, 41
+  offset: 0, 0
+  index: -1
