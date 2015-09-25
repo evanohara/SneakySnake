@@ -1,111 +1,111 @@
 
 ui-atlas.png
-size: 2048,512
+size: 2048,256
 format: RGBA8888
 filter: Nearest,Nearest
 repeat: none
 buttonDown
   rotate: false
-  xy: 2, 2
+  xy: 1164, 26
   size: 192, 64
   orig: 192, 64
   offset: 0, 0
   index: -1
 buttonUp
   rotate: false
-  xy: 1220, 396
+  xy: 1826, 172
   size: 192, 64
   orig: 192, 64
   offset: 0, 0
   index: -1
 dig_down_down
   rotate: false
-  xy: 2, 68
+  xy: 356, 36
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 dig_down_up
   rotate: false
-  xy: 356, 294
+  xy: 558, 36
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 dig_up_down
   rotate: false
-  xy: 558, 294
+  xy: 760, 36
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 dig_up_up
   rotate: false
-  xy: 760, 294
+  xy: 962, 36
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 help1
   rotate: false
-  xy: 2, 270
+  xy: 2, 12
   size: 352, 224
   orig: 352, 224
   offset: 0, 0
   index: -1
 menubackground
   rotate: false
-  xy: 962, 350
+  xy: 1164, 92
   size: 256, 144
   orig: 256, 144
   offset: 0, 0
   index: -1
 shovel
   rotate: false
-  xy: 1542, 462
+  xy: 1744, 204
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 snake_head
   rotate: false
-  xy: 1220, 462
+  xy: 1422, 204
   size: 320, 32
   orig: 320, 32
   offset: 0, 0
   index: -1
 title
   rotate: false
-  xy: 962, 300
+  xy: 1826, 20
   size: 144, 48
   orig: 144, 48
   offset: 0, 0
   index: -1
 turn_left_down
   rotate: false
-  xy: 204, 68
+  xy: 1422, 2
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 turn_left_up
   rotate: false
-  xy: 406, 92
-  size: 200, 200
-  orig: 200, 200
+  xy: 1826, 70
+  size: 100, 100
+  orig: 100, 100
   offset: 0, 0
   index: -1
 turn_right_down
   rotate: false
-  xy: 608, 92
+  xy: 1624, 2
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 turn_right_up
   rotate: false
-  xy: 810, 92
-  size: 200, 200
-  orig: 200, 200
+  xy: 1928, 70
+  size: 100, 100
+  orig: 100, 100
   offset: 0, 0
   index: -1

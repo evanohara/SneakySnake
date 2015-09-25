@@ -51,12 +51,14 @@ public class GameScreen extends AbstractGameScreen {
     private final float DEBUG_REBUILD_INTERVAL = 5.0f;
     private boolean debugEnabled = false;
     private float debugRebuildStage;
+    private float boardWidth;
 
     private boolean paused;
 
     public GameScreen(Game game) {
         super(game);
         AudioManager.instance.play(Assets.instance.music.ssMusicIntro,true);
+        boardWidth = 704.0f;
     }
 
 
@@ -72,7 +74,7 @@ public class GameScreen extends AbstractGameScreen {
         }
         // Sets the clear screen color to: Black
         //Gdx.gl.glClearColor(0/255.0f, 96/250.0f, 184/255.0f, 1.0f);
-        Gdx.gl.glClearColor(0/255.0f, 0/255.0f, 0/255.0f, 1.0f);
+        Gdx.gl.glClearColor(0/255.0f,138/255.0f, 207/255.0f, 1.0f);
         // Clears the screen
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         // Render game world to screen
@@ -83,6 +85,17 @@ public class GameScreen extends AbstractGameScreen {
         multiplier.setText("x" + String.format("%.1f",worldController.world.multiplier));
         //fpsLab.setText("FPS: " + Gdx.graphics.getFramesPerSecond());
         labShovelCounter.setText("x" + worldController.world.snake.shovels);
+
+        stage.getBatch().begin();
+        stage.getBatch().draw(Assets.instance.frame.frameUL, 0, Gdx.graphics.getHeight()-8, 8, 8);
+        stage.getBatch().draw(Assets.instance.frame.frameUR, Gdx.graphics.getWidth()-8, Gdx.graphics.getHeight()-8, 8, 8);
+        stage.getBatch().draw(Assets.instance.frame.frameBL, 0, 0, 8, 8);
+        stage.getBatch().draw(Assets.instance.frame.frameBR, Gdx.graphics.getWidth()-8, 0, 8, 8);
+        stage.getBatch().draw(Assets.instance.frame.frameU, 8, Gdx.graphics.getHeight()-8, Gdx.graphics.getWidth()-16, 8);
+        stage.getBatch().draw(Assets.instance.frame.frameL, 0, 8, 8, Gdx.graphics.getHeight()-16);
+        stage.getBatch().draw(Assets.instance.frame.frameB, 8, 0, Gdx.graphics.getWidth()-16, 8);
+        stage.getBatch().draw(Assets.instance.frame.frameR, Gdx.graphics.getWidth()-8, 8, 8, Gdx.graphics.getHeight()-16);
+        stage.getBatch().end();
 
         stage.draw();
     }
@@ -124,7 +137,7 @@ public class GameScreen extends AbstractGameScreen {
 
     private Table buildDigDownButton() {
         Table layer = new Table();
-        layer.align(Align.bottomRight).pad(10.0f);
+        layer.align(Align.bottomRight).pad(Gdx.graphics.getWidth()* 0.01f);
         btnDigDown = new Button(skinUI, "digDown");
         btnDigDown.addListener(new ChangeListener() {
             @Override
@@ -141,7 +154,7 @@ public class GameScreen extends AbstractGameScreen {
 
     private Table buildDigUpButton() {
         Table layer = new Table();
-        layer.align(Align.bottomLeft).pad(10.0f);
+        layer.align(Align.bottomLeft).pad(Gdx.graphics.getWidth()* 0.01f);
         btnDigUp = new Button(skinUI, "digUp");
         btnDigUp.addListener(new ChangeListener() {
             @Override
@@ -176,9 +189,9 @@ public class GameScreen extends AbstractGameScreen {
     private Table buildLeftButton() {
         Table layer = new Table();
         layer.align(Align.center).align(Align.left);
-        layer.pad(Gdx.graphics.getWidth()* 0.01f);
         // + Buttons
         btnLeft = new Button(skinUI, "left");
+        layer.pad(((Gdx.graphics.getWidth() - boardWidth)/2-btnLeft.getWidth())/2);
         layer.add(btnLeft);
         btnLeft.addListener(new ChangeListener() {
             @Override
@@ -195,9 +208,9 @@ public class GameScreen extends AbstractGameScreen {
     private Table buildRightButton() {
         Table layer = new Table();
         layer.align(Align.center).align(Align.right);
-        layer.pad(Gdx.graphics.getWidth()* 0.01f);
         // + Buttons
         btnRight = new Button(skinUI, "right");
+        layer.pad(((Gdx.graphics.getWidth() - boardWidth)/2-btnRight.getWidth())/2);
         layer.add(btnRight);
         btnRight.addListener(new ChangeListener() {
             @Override

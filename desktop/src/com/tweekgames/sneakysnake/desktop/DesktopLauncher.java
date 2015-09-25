@@ -28,17 +28,19 @@ public class DesktopLauncher {
         //config.width = 1280;
         //config.height = 768;
 
-        config.width = 1136;
-        config.height = 640;
+        //config.width = 1136;
+        //config.height = 640;
 
         //config.width = 960;
         //config.height = 640;
 
+
+        //  0.5625   16/9
+        config.width = 1280;
+        config.height = 720;
+
         //config.width = 1920;
         //config.height = 1080;
-
-        //config.width = 1280;
-        //config.height = 720;
 
 		new LwjglApplication(new SneakySnakeGame(new ActionResolverDesktop()), config);
 	}

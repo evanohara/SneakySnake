@@ -53,6 +53,7 @@ public class Assets implements Disposable, AssetErrorListener{
     public AssetSplash splash;
 
     public AssetBackground background;
+    public AssetFrame frame;
     public AssetSnake snake;
     public AssetFruit fruit;
     public AssetShovel shovel;
@@ -92,6 +93,7 @@ public class Assets implements Disposable, AssetErrorListener{
         // create game resource objects
         splash = new AssetSplash(atlas);
         background = new AssetBackground(atlas);
+        frame = new AssetFrame(atlas);
         snake = new AssetSnake(atlas);
         fruit = new AssetFruit(atlas);
         shovel = new AssetShovel(atlas);
@@ -153,6 +155,29 @@ public class Assets implements Disposable, AssetErrorListener{
 
         public AssetShovel (TextureAtlas atlas) {
             shovel = atlas.findRegion("shovel");
+        }
+    }
+
+    public class AssetFrame {
+        public final AtlasRegion frameUL;
+        public final AtlasRegion frameUR;
+        public final AtlasRegion frameBL;
+        public final AtlasRegion frameBR;
+        public final AtlasRegion frameL;
+        public final AtlasRegion frameU;
+        public final AtlasRegion frameR;
+        public final AtlasRegion frameB;
+
+        public AssetFrame (TextureAtlas atlas)
+        {
+            frameUL = atlas.findRegion("frame_ul");
+            frameUR = atlas.findRegion("frame_ur");
+            frameBL = atlas.findRegion("frame_bl");
+            frameBR = atlas.findRegion("frame_br");
+            frameU = atlas.findRegion("frame_u");
+            frameL = atlas.findRegion("frame_l");
+            frameB = atlas.findRegion("frame_b");
+            frameR = atlas.findRegion("frame_r");
         }
     }
 
